@@ -1,55 +1,55 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>GOAL! GOAL! GOAL!</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="GOAL! GOAL! GOAL! — a fast, fun football game with tournament and penalty modes." />
-  <style>
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background: #0f172a;
-      color: #ffffff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      text-align: center;
-    }
-    .card {
-      max-width: 520px;
-      padding: 32px;
-      background: rgba(255,255,255,0.05);
-      border-radius: 16px;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
-    }
-    h1 {
-      font-size: 36px;
-      margin-bottom: 12px;
-    }
-    p {
-      font-size: 17px;
-      line-height: 1.5;
-      opacity: 0.9;
-    }
-    .badge {
-      margin-top: 20px;
-      font-size: 13px;
-      opacity: 0.6;
-    }
-  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Goal Goal Goal</title>
+  <meta name="description" content="Goal Goal Goal — a fast, fun soccer mini-game." />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="card">
-    <h1>⚽️ GOAL! GOAL! GOAL!</h1>
-    <p>
-      A fast, fun football game featuring tournament play, group stages,
-      knockouts, and penalty shootouts.
-    </p>
-    <div class="badge">
-      © The Green Portfolio
-    </div>
-  </div>
+  <main class="wrap">
+    <header class="hero">
+      <div class="badge">⚽️ Goal Goal Goal</div>
+      <h1>Fast. Fun. Football.</h1>
+      <p class="sub">
+        A clean soccer mini-game experience — quick matches, tournament vibes, and big moments.
+      </p>
+
+      <div class="cta">
+        <a class="btn" href="#" aria-disabled="true">App Store (soon)</a>
+        <a class="btn ghost" href="mailto:team@thegreenportfolio.ca">Contact</a>
+      </div>
+
+      <div class="meta">
+        <span>🏆 Tournament mode</span>
+        <span>🥅 Penalties</span>
+        <span>📱 iPhone</span>
+      </div>
+    </header>
+
+    <section class="cards">
+      <div class="card">
+        <h2>Tournament</h2>
+        <p>Group stage + knockouts. Progress, points, and a champion.</p>
+      </div>
+      <div class="card">
+        <h2>Quick Matches</h2>
+        <p>Jump in, score, celebrate, repeat. Built for short sessions.</p>
+      </div>
+      <div class="card">
+        <h2>Made by The Green Portfolio</h2>
+        <p>Simple, polished experiences — focused on fun and clarity.</p>
+      </div>
+    </section>
+
+    <footer class="foot">
+      <span>© <span id="y"></span> The Green Portfolio</span>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
