@@ -1,55 +1,102 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Goal Goal Goal</title>
-  <meta name="description" content="Goal Goal Goal — a fast, fun soccer mini-game." />
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GOAL! GOAL! GOAL! – A fast, fun football game</title>
+
+  <meta name="description" content="GOAL! GOAL! GOAL! is a fast, fun football game with tournament and penalty modes. Made by the same developer as Bike Ride Green." />
+  <meta property="og:title" content="GOAL! GOAL! GOAL!" />
+  <meta property="og:description" content="A fast, fun football game with tournament and penalty modes." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://thegreenportfolio.github.io/goalgoalgoal/" />
+
+  <link rel="stylesheet" href="./styles.css" />
 </head>
+
 <body>
-  <main class="wrap">
-    <header class="hero">
-      <div class="badge">⚽️ Goal Goal Goal</div>
-      <h1>Fast. Fun. Football.</h1>
-      <p class="sub">
-        A clean soccer mini-game experience — quick matches, tournament vibes, and big moments.
+<div class="page">
+
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="gp-label">THE GREEN PORTFOLIO PRESENTS</div>
+
+      <div class="hero-pill">
+        <!-- Optional: add /assets/icon.png later -->
+        <!-- <img src="./assets/icon.png" class="hero-pill-icon" alt="GOAL! icon" /> -->
+        <span>GOAL! GOAL! GOAL! for iPhone</span>
+      </div>
+
+      <h1 class="hero-title">GOAL! GOAL! GOAL!</h1>
+      <p class="hero-subtitle">
+        A fast, fun football game with tournament and penalty modes.
       </p>
 
-      <div class="cta">
-        <a class="btn" href="#" aria-disabled="true">App Store (soon)</a>
-        <a class="btn ghost" href="mailto:team@thegreenportfolio.ca">Contact</a>
+      <div class="hero-cta-row">
+        <!-- TODO: replace with your real App Store link -->
+        <a class="btn-primary" href="https://apps.apple.com/" target="_blank" rel="noopener">
+          Get on the App Store
+        </a>
+        <a class="btn-secondary" href="#features">
+          See features
+        </a>
       </div>
 
-      <div class="meta">
-        <span>🏆 Tournament mode</span>
-        <span>🥅 Penalties</span>
-        <span>📱 iPhone</span>
-      </div>
-    </header>
+      <p class="hero-subtitle" style="font-size:14px; margin-top:10px;">
+        Made by the same developer as <strong>Bike Ride Green</strong>.
+      </p>
 
-    <section class="cards">
-      <div class="card">
-        <h2>Tournament</h2>
-        <p>Group stage + knockouts. Progress, points, and a champion.</p>
+      <div class="footer-links" style="margin-top:18px;">
+        <a href="https://bikeridegreen.ca/" target="_blank" rel="noopener">Bike Ride Green Website</a>
       </div>
-      <div class="card">
-        <h2>Quick Matches</h2>
-        <p>Jump in, score, celebrate, repeat. Built for short sessions.</p>
-      </div>
-      <div class="card">
-        <h2>Made by The Green Portfolio</h2>
-        <p>Simple, polished experiences — focused on fun and clarity.</p>
-      </div>
-    </section>
+    </div>
+  </header>
 
-    <footer class="foot">
-      <span>© <span id="y"></span> The Green Portfolio</span>
-    </footer>
-  </main>
+  <section id="features" class="card-shell">
+    <div class="card">
+      <h2 class="card-title">What you get</h2>
+      <p class="card-subtitle">Simple, quick, and made to be fun.</p>
 
-  <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
-  </script>
+      <div class="grid">
+        <div>
+          <div class="item-title"><span class="dot"></span><span>Quick matches</span></div>
+          <div class="item-body">Jump in fast, score goals, and keep the pace moving.</div>
+        </div>
+
+        <div>
+          <div class="item-title"><span class="dot"></span><span>World Cup tournament mode</span></div>
+          <div class="item-body">Play group stage games, advance to semifinals, and fight for the final.</div>
+        </div>
+
+        <div>
+          <div class="item-title"><span class="dot"></span><span>Penalty mode</span></div>
+          <div class="item-body">Practice penalties and win shootouts under pressure.</div>
+        </div>
+
+        <div>
+          <div class="item-title"><span class="dot"></span><span>Clean UI</span></div>
+          <div class="item-body">Readable, simple screens that stay out of your way.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Support &amp; privacy</h2>
+    <p>
+      Need help, found a bug, or have a feature idea? Reach out anytime.
+    </p>
+
+    <div class="footer-links">
+      <a href="./support.html">Support</a>
+      <a href="./privacy.html">Privacy Policy</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 The Green Portfolio. All rights reserved.</p>
+  </footer>
+
+</div>
 </body>
 </html>
