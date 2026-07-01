@@ -134,6 +134,26 @@
       flex-wrap: wrap;
       margin-bottom: 18px;
     }
+    .creator-link {
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.creator-link:hover {
+  text-decoration: underline;
+}
+
+.bike-link {
+  color: #0d8a25;
+}
+
+.event-link {
+  color: #2f8cff;
+}
+
+.maze-link {
+  color: #8b5cf6;
+}
 
     .btn-primary,
     .btn-secondary {
@@ -300,13 +320,16 @@
         </a>
       </div>
 
-     <div class="hero-trial">
+ <div class="hero-trial">
   From the same creator as
-  <a href="https://bike.thegreenportfolio.ca/" target="_blank" rel="noopener">
+  <a class="creator-link bike-link" href="https://bike.thegreenportfolio.ca/" target="_blank" rel="noopener">
     <strong>Bike Ride Green</strong>
-  </a>
+  </a>,
+  <a class="creator-link event-link" href="https://eventradar.thegreenportfolio.ca/" target="_blank" rel="noopener">
+    <strong>Event Radar</strong>
+  </a>,
   and
-  <a href="https://maze.thegreenportfolio.ca/" target="_blank" rel="noopener">
+  <a class="creator-link maze-link" href="https://maze.thegreenportfolio.ca/" target="_blank" rel="noopener">
     <strong>Trivia Maze</strong>
   </a>.
 </div>
